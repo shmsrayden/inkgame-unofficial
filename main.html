@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #4B2F3B;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-1 {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .fade-in-2 {
+            animation: fadeIn 1s ease-in-out 1.5s forwards;
+            opacity: 0;
+        }
+
+        .fade-in-3 {
+            animation: fadeIn 1s ease-in-out 3s forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="flex flex-col items-center space-y-8 max-w-lg w-full">
+
+        <img src="https://cdn.discordapp.com/icons/1378223432503656529/37f4d2b7bf7f5690a29e386d823f6332.png?size=1024" 
+             alt="Discord Logo" 
+             class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg fade-in-1">
+
+        <img src="https://i.postimg.cc/nhG2X2Rb/07ba9097c7e7906f82726f9c5ba1481f.png" 
+             alt="Ink Game Logo" 
+             class="w-64 md:w-80 h-auto rounded-lg shadow-lg fade-in-2">
+             
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full justify-center fade-in-3">
+            
+            <a href="https://discord.gg/inkgame" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="flex items-center justify-center bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md transform hover:scale-105">
+                Join the Discord
+            </a>
+
+            <a href="https://www.roblox.com/games/99567941238278/RELEASE-Ink-Game" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="flex items-center justify-center bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md transform hover:scale-105">
+                Play Ink Game
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
